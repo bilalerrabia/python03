@@ -1,17 +1,19 @@
 import sys
 
 ac = len(sys.argv)
-lst =[]
+lst = []
 print("=== Player Score Analytics ===")
 if ac == 1:
-    print("No scores provided. Usage: "
-    "python3 ft_score_analytics.py <score1>"
-    " <score2> ...")
+    print(
+        "No scores provided. Usage: "
+        "python3 ft_score_analytics.py <score1>"
+        " <score2> ..."
+    )
 else:
     for i in range(1, ac):
         try:
             lst.append(int(sys.argv[i]))
-        except:
+        except Exception:
             print("not a number")
             exit(0)
 

@@ -13,5 +13,5 @@ else:
     while ac < argc:
         print(f"Argument {ac}: {sys.argv[ac]}")
         ac += 1
-    
+
 print(f"Total arguments: {argc}")
